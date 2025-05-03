@@ -1,54 +1,30 @@
 body {
-  font-family: sans-serif;
+  background-color: rgb(241, 255, 241);
 }
 
-#content {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 650px;
+@font-face {
+  font-family: LexendDeca;
+  src: url(Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
 }
 
-#content h2 {
-  font-size: 1.7em;
-  color: rgb(54, 158, 243);
-  margin-bottom: 20px;
-}
-
-#content h2 a {
-  font-size: .6em;
+div {
+  font-family: LexendDeca;
 }
 
 a {
-  color: #FF0202;
+  color: rgb(237, 24, 183);
 }
 
 a:hover {
-  color: #FFAB10;
+  color: rgb(237, 184, 24);
 }
 
 a.active {
-  color: rgb(54, 158, 243);
+  color: rgb(0, 163, 213);
 }
 
 a.top {
   margin-left: 10px;
-}
-
-#toc {
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgb(71, 190, 255);
-}
-
-#toc h2 {
-  color: inherit;
-}
-
-#toc ul {
-  margin: 0 0 20px 20px;
-}
-
-#toc ul li {
-  line-height: 1.2em;
 }
 
 .clear {
@@ -58,78 +34,100 @@ a.top {
 /* HEADER */
 header {
   padding: 20px 0;
-  border-bottom: 1px solid rgb(71, 190, 255);
+  border-bottom: 1px solid rgb(34, 58, 44);
   margin-bottom: 20px;
 }
 
 #title {
   margin: 0 auto;
   width: 90%;
-  max-width: 650px;
+  max-width: 800px;
 }
 
 header h1 {
-  font-size: 2.5em;
-}
-
-header nav ul li {
-  display: inline;
-} 
-/* END HEADER */
-
-/* PROJECTS PAGE */
-#projects {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 650px;
-}
-
-.project {
+  font-size: 4em;
+  text-align: center;
+  font-weight: bold;
   margin-bottom: 20px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid rgb(71, 190, 255);
 }
 
-#content .project h2 {
-  color: black;
-}
-
-.project img {
-  width: 250px;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.project iframe {
-  width: 90%;
-  margin: 1px auto 8px auto;
-}
-
-.project h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.center-image {
+nav {
   text-align: center;
 }
-.center-image img {
-  width: 300px;
-  height: 130px;
+
+header ul li{
+  display: inline;
+  font-size: 1.2em;
+}
+/* END HEADER */
+
+/* BODY CONTENT */
+
+#content {
   margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  border-bottom: 1px solid black;
 }
 
-.list {
-  margin: 10px 0;
+.thumbnail {
+  float: left;
+  max-width: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.list p {
-  margin-bottom: 4px;
+#quote {
+  font-size: 1.6em;
+  text-align: center;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .thumbnail {
+    max-width: 100%;
+  }
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.text {
+  padding-bottom: 20px;
+}
+
+.text p {
+  font-size: 1.2em;
+  line-height: 110%;
+  text-indent: 2em;
+}
+
+.text h2 {
+  font-size: 1.6em;
+  text-decoration: underline;
 }
 
 strong {
   font-weight: bold;
 }
 
-/* END PROJECTS PAGE */
+.pricing {
+  font-size: 1.2em;
+}
+
+footer {
+  clear: both;
+}
+/* END BODY CONTENT */
+
+#footer {
+  margin: 20px auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
